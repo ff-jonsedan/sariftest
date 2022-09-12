@@ -6,5 +6,15 @@ public class Class1
     {
         Console.WriteLine("World");
     }
+
+    public static void Foo()
+    {
+        Foo();
+    }
+
+    public void DoNothing()
+    {
+        throw new NotImplementedException();
+    }
     
 }
