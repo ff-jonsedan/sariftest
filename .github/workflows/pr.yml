@@ -17,7 +17,9 @@ jobs:
           languages: csharp
       - name: Autobuild
         uses: github/codeql-action/autobuild@v1
-        working-directory: ./app/ClassLibrary1
+        with:
+          working-directory: ./app/ClassLibrary1
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
-        working-directory: ./app/ClassLibrary1
+        with:
+          working-directory: ./app/ClassLibrary1
